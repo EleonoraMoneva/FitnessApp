@@ -1,0 +1,42 @@
+﻿@model FitnessApp.Models.DietPlan
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>DietPlan</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Breakfast)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Breakfast)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Lunch)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Lunch)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dinner)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dinner)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Snacks)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Snacks)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
